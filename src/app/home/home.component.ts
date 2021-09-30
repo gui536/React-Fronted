@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
 nomeProduto: string = 'Curso de Angular';
-idProduto: number = 123;
+idProduto: number = 3;
 precoProduto: number = 2.59;
 promocao: boolean = true;
 anuncio: string = `O ${this.nomeProduto} está em promoção!`;
+foto: string = 'assets/img/crud.png';
+dataValidade: string = '2021-12-31';
 
 
   constructor() {
@@ -23,18 +25,6 @@ anuncio: string = `O ${this.nomeProduto} está em promoção!`;
     console.log('ID: ', this.idProduto);
     console.log('Preço: ', this.precoProduto);
     console.log('Promoção: ', this.promocao);
-
-
-    let idade = 10;
-    function imprimeIdade(){
-      for (let idade = 30; idade <=40; idade++){
-      console.log('Idade dentro do For é: ', idade);
-      }
-      console.log('Idade fora do for: ', idade);
-    }
-
-    imprimeIdade();
-
    }
 
   ngOnInit(): void {
